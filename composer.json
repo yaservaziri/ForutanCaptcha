@@ -1,0 +1,45 @@
+{
+  "name": "forutan/captcha",
+  "version": "1.0.0",
+  "description": "A secure, modular, image-based CAPTCHA for Laravel with cryptographic protection and multi-context support (login, checkout, etc.). Effectively prevents automated spam in production forms.",
+  "type": "library",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Forutan\\Captcha\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Forutan\\Captcha\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Yaser (Forutan) Vaziri",
+      "email": "forutan.vaziri@gmail.com"
+    }
+  ],
+  "funding": [
+    {
+      "type": "custom",
+      "url": "https://yaservaziri.github.io/ForutanCaptcha/donate.html"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/routing": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/http": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/console": "^9.0|^10.0|^11.0|^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Forutan\\Captcha\\Providers\\FCaptchaServiceProvider"
+      ]
+    }
+  }
+}
